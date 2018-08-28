@@ -28,8 +28,6 @@ def analize_sentiment(tweet):
 data = pd.read_csv('realDonaldTrumptweets.csv')
 
 
-# print(data.head(10))
-
 data['SA'] = np.array([analize_sentiment(tweet) for tweet in data['text']])
 # print(data.head(10))
 
